@@ -58,7 +58,13 @@ public class Main {
         double result = Math.pow(number1,number2);
         System.out.println("The power result is: " + result);
     }
-
+    public static void squareroot () {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter the first number: ");
+        int number1 = scanner.nextInt();
+        double result = Math.sqrt(number1);
+        System.out.println("The power result is: " + result);
+    }
 
     public  static void main (String [] args){
         int choice;
@@ -70,6 +76,7 @@ public class Main {
             System.out.println("3: multiply(*)");
             System.out.println("4: divide(/)");
             System.out.println("5: power(^)");
+            System.out.println("6: squareroot");
 
             System.out.println("enter the choice de 1 to 8");
             Scanner scanner = new Scanner(System.in);
@@ -90,6 +97,9 @@ public class Main {
                     break;
                 case 5:
                     power();
+                    break;
+                case 6:
+                    squareroot();
                     break;
 
 
