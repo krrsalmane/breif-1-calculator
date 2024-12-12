@@ -65,8 +65,14 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter the first number: ");
         int number1 = scanner.nextInt();
-        double result = Math.sqrt(number1);
-        System.out.println("The square root result is: " + result);
+        if(number1<0){
+            System.out.println("no it's negative ");
+        }
+        else{
+            double result = Math.sqrt(number1);
+            System.out.println("The square root result is: " + result);
+        }
+
     }
     public static void factorial () {
         System.out.println("enter a number");
